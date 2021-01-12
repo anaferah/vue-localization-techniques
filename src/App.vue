@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view/>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'app',
+  name: 'App',
+  components: {
+  },
   computed: mapState(['locale']),
   watch: {
     locale() {
@@ -21,12 +23,24 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://use.typekit.net/uzx2elw.css');
+@import './../node_modules/bulma/css/bulma.css';
+@import './assets/scss/_colors.scss';
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Muli', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #1d1d1f;
+  padding-top: 15px;
+}
+.header-intro {
+  padding: 5rem 0 5rem;
+  background-color: #fafafa;
+  margin-bottom: 5rem;
+}
+a {
+  text-decoration: none;
 }
 </style>

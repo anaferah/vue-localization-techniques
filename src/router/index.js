@@ -5,6 +5,10 @@ import App from '@/App.vue'
 import { languages } from '@/plugins/i18n'
 import store from '@/store'
 import About from '@/views/About.vue'
+import Contact from '@/views/Contact.vue'
+import Integrations from '@/views/Integrations.vue'
+import Dropshipping from '@/views/Dropshipping.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -38,6 +42,21 @@ const routes = [
         path: 'about',
         name: 'about',
         component: About
+      },
+      {
+        path: 'contact',
+        name: 'contact',
+        component: Contact
+      },
+      {
+        path: 'integrations',
+        name: 'integrations',
+        component: Integrations
+      },
+      {
+        path: 'dropshipping',
+        name: 'dropshipping',
+        component: Dropshipping
       }
     ]
   }

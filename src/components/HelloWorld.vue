@@ -4,17 +4,18 @@
     <p>
       {{ $t('welcomeMessage') }}
     </p>
-    <p class="date">Today's Date: {{ $d(new Date(), 'long') }}</p>
-    <lang-dropdown />
+    <!-- <p class="date">Today's Date: {{ $d(new Date(), 'long') }}</p> -->
+    <!-- <lang-dropdown /> -->
   </div>
 </template>
 
 <script>
-import LangDropdown from './LangDropdown.vue'
+// import LangDropdown from './LangDropdown.vue'
+
 export default {
   name: 'HelloWorld',
   components: {
-    LangDropdown
+    // LangDropdown
   },
   props: {
     msg: String
